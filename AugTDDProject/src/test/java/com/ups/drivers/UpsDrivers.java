@@ -9,6 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class UpsDrivers {
 
 	public WebDriver getChromeDriver() {
+		System.out.println("Juel changed this line");
 		WebDriverManager.chromedriver().browserVersion("87.0.4280.88").setup();
 		WebDriver driver = new ChromeDriver();
 		return driver;
